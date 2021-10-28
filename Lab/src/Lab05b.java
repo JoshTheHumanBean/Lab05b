@@ -1,10 +1,12 @@
 public class Lab05b {
     public static void main(String[] args) {
-        System.out.printf("Monkey%n");
+
+
     }
 }
 
 class PersonalComputer{
+    private String pcName;
     private int gigsRAM;
     private int gigsStorage;
     private int cpuCores;
@@ -14,6 +16,7 @@ class PersonalComputer{
     private String operatingSystem;
 
     public PersonalComputer(){
+        this.pcName = "null";
         this.gigsRAM = 0;
         this.gigsStorage = 0;
         this.cpuCores = 0;
