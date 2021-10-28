@@ -37,5 +37,7 @@ class PersonalComputer{
         this.gigsRAM = gigsRAM;
     }
 
-
+    public int getGigsRAM() {
+        return gigsRAM;
+    }
 }
