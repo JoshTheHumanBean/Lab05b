@@ -15,6 +15,12 @@ class PersonalComputer{
 
 
     public PersonalComputer(){
-
+        this.gigsRAM = 0;
+        this.gigsStorage = 0;
+        this.cpuCores = 0;
+        this.wifiOnOff = false;
+        this.bluetoothOnOff = false;
+        this.cpuMaker = "null";
+        this.operatingSystem = "null";
     }
 }
