@@ -37,7 +37,26 @@ class PersonalComputer{
         this.gigsRAM = gigsRAM;
     }
 
-    public int getGigsRAM() {
-        return gigsRAM;
+    public int getGigsRAM() {return gigsRAM;}
+
+    public void setGigsStorage(int gigsStorage) {this.gigsStorage = gigsStorage;}
+
+    public int getGigsStorage() {return gigsStorage;}
+
+    public void setCpuCores(int cpuCores) {this.cpuCores = cpuCores;}
+
+    public int getCpuCores() {return cpuCores;}
+
+    public void setCpuMaker(String cpuMaker) {this.cpuMaker = cpuMaker;}
+
+    public String getCpuMaker() {return cpuMaker;}
+
+    public void setOperatingSystem(String operatingSystem) {this.operatingSystem = operatingSystem;}
+
+    public String getOperatingSystem() {return operatingSystem;}
+
+    public void toggleBluetooth(){
+        if (bluetoothOnOff == false) {bluetoothOnOff = true;}
+        else {bluetoothOnOff =false;}
     }
 }
