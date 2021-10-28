@@ -23,7 +23,8 @@ class PersonalComputer{
         this.operatingSystem = "null";
     }
 
-    public PersonalComputer(int gigsRAM, int gigsStorage, int cpuCores, String cpuMaker, String operatingSystem){
+    public PersonalComputer(String pcName, int gigsRAM, int gigsStorage, int cpuCores, String cpuMaker, String operatingSystem){
+        this.pcName = pcName;
         this.gigsRAM = gigsRAM;
         this.gigsStorage = gigsStorage;
         this.cpuCores = cpuCores;
