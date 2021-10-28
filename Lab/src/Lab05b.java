@@ -33,9 +33,7 @@ class PersonalComputer{
         this.operatingSystem = operatingSystem;
     }
 
-    public void setGigsRAM(int gigsRAM){
-        this.gigsRAM = gigsRAM;
-    }
+    public void setGigsRAM(int gigsRAM) {this.gigsRAM = gigsRAM;}
 
     public int getGigsRAM() {return gigsRAM;}
 
@@ -58,5 +56,10 @@ class PersonalComputer{
     public void toggleBluetooth(){
         if (bluetoothOnOff == false) {bluetoothOnOff = true;}
         else {bluetoothOnOff =false;}
+    }
+
+    public void toggleWifi(){
+        if (wifiOnOff == false) {wifiOnOff = true;}
+        else {wifiOnOff =false;}
     }
 }
