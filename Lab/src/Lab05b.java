@@ -3,3 +3,18 @@ public class Lab05b {
         System.out.printf("Monkey%n");
     }
 }
+
+class PersonalComputer{
+    private int gigsRAM;
+    private int gigsStorage;
+    private int cpuCores;
+    private boolean wifiOnOff;
+    private boolean bluetoothOnOff;
+    private String cpuMaker;
+    private String operatingSystem;
+
+
+    public PersonalComputer(){
+
+    }
+}
