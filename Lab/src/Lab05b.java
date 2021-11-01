@@ -1,3 +1,5 @@
+//Nicholas Bailey and Joshua Shuman-Thomas
+
 public class Lab05b {
     public static void main(String[] args) {
 
