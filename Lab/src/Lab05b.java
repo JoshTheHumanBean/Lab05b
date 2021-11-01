@@ -13,7 +13,7 @@ class PersonalComputer{
     private boolean wifiOnOff;
     private boolean bluetoothOnOff;
     private String cpuMaker;
-    private String operatingSystem;
+    private OperatingSystem operatingSystem;
 
     public PersonalComputer(){
         this.pcName = "null";
@@ -23,7 +23,7 @@ class PersonalComputer{
         this.wifiOnOff = false;
         this.bluetoothOnOff = false;
         this.cpuMaker = "null";
-        this.operatingSystem = "null";
+        this.operatingSystem = new OperatingSystem("null");
     }
 
     public PersonalComputer(String pcName, int gigsRAM, int gigsStorage, int cpuCores, String cpuMaker, String osName){
