@@ -1,7 +1,10 @@
 public class Lab05b {
     public static void main(String[] args) {
+        PersonalComputer desktop1 = new PersonalComputer("Nick's PC", 16, 2000, 4, "AMD", "Linux");
+        PersonalComputer desktop2 = new PersonalComputer("Josh's Potato PC", 4, 32, 1, "Intel", "MacOS");
 
-
+        desktop1.displaySpecs();
+        desktop2.displaySpecs();
     }
 }
 
@@ -37,6 +40,10 @@ class PersonalComputer{
         this.operatingSystem = new OperatingSystem((osName));
     }
 
+    public String getPcName() {return pcName;}
+
+    public void setPcName(String pcName) {this.pcName = pcName;}
+
     public void setGigsRAM(int gigsRAM) {this.gigsRAM = gigsRAM;}
 
     public int getGigsRAM() {return gigsRAM;}
@@ -62,6 +69,17 @@ class PersonalComputer{
         if (wifiOnOff == false) {wifiOnOff = true;}
         else {wifiOnOff =false;}
     }
+
+    public void displaySpecs(){
+        System.out.printf("---------------------------------------------------%n");
+        System.out.printf("PC Name: %s%n", getPcName());
+        System.out.printf("%s Gigabyte(s) of Ram%n", getGigsRAM());
+        System.out.printf("%s Gigabyte(s) of Storage%n", (getGigsStorage()));
+        System.out.printf("%s CPU Core(s)%n", getCpuCores());
+        System.out.printf("CPU Manufacturer: %s%n", getCpuMaker());
+        operatingSystem.displayOperatingSystem();
+        System.out.printf("---------------------------------------------------%n%n");
+    }
 }
 
 class OperatingSystem{
@@ -83,7 +101,7 @@ class OperatingSystem{
         this.osName = name;
     }
     
-    public void displayOperatingSystem(OperatingSystem object){
-        System.out.println(object.getOperatingSystem());
+    public void displayOperatingSystem(){
+        System.out.printf("%s Operating System%n", getOperatingSystem());
     }
 }
