@@ -26,7 +26,7 @@ class PersonalComputer{
         this.operatingSystem = "null";
     }
 
-    public PersonalComputer(String pcName, int gigsRAM, int gigsStorage, int cpuCores, String cpuMaker, String operatingSystem){
+    public PersonalComputer(String pcName, int gigsRAM, int gigsStorage, int cpuCores, String cpuMaker, String osName){
         this.pcName = pcName;
         this.gigsRAM = gigsRAM;
         this.gigsStorage = gigsStorage;
@@ -34,7 +34,7 @@ class PersonalComputer{
         this.wifiOnOff = false;
         this.bluetoothOnOff = false;
         this.cpuMaker = cpuMaker;
-        this.operatingSystem = operatingSystem;
+        this.operatingSystem = new OperatingSystem((osName));
     }
 
     public void setGigsRAM(int gigsRAM) {this.gigsRAM = gigsRAM;}
@@ -52,11 +52,7 @@ class PersonalComputer{
     public void setCpuMaker(String cpuMaker) {this.cpuMaker = cpuMaker;}
 
     public String getCpuMaker() {return cpuMaker;}
-
-    public void setOperatingSystem(String operatingSystem) {this.operatingSystem = operatingSystem;}
-
-    public String getOperatingSystem() {return operatingSystem;}
-
+    
     public void toggleBluetooth(){
         if (bluetoothOnOff == false) {bluetoothOnOff = true;}
         else {bluetoothOnOff =false;}
@@ -65,5 +61,29 @@ class PersonalComputer{
     public void toggleWifi(){
         if (wifiOnOff == false) {wifiOnOff = true;}
         else {wifiOnOff =false;}
+    }
+}
+
+class OperatingSystem{
+    private String osName;
+
+    public OperatingSystem(){
+        this.osName = "null";
+    }
+
+    public OperatingSystem(String osName){
+        this.osName = osName;
+    }
+
+    private String getOperatingSystem(){
+        return osName;
+    }
+
+    public void setOperatingSystem(String name){
+        this.osName = name;
+    }
+    
+    public void displayOperatingSystem(OperatingSystem object){
+        System.out.println(object.getOperatingSystem());
     }
 }
